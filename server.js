@@ -106,6 +106,10 @@ socket.on('send_group_message', (data) => {
 });
 });
 
+// AÑADE ESTA LÍNEA JUSTO ANTES DEL LISTEN
+const PORT = process.env.PORT || 4000; 
+
+// ESTA ES TU LÍNEA 109 QUE ESTÁ DANDO ERROR
 server.listen(PORT, '0.0.0.0', () => {
-    console.log(`Servidor corriendo en el puerto ${PORT}`);
+    console.log(`ACM CHAT - PUERTO ${PORT}`);
 });
