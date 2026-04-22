@@ -106,4 +106,6 @@ socket.on('send_group_message', (data) => {
 });
 });
 
-server.listen(4000, () => { console.log('ACM CHAT - PUERTO 4000'); });
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Servidor corriendo en el puerto ${PORT}`);
+});
